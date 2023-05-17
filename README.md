@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### add `tailwind.connfig.js` In your main directory
+### Add `tailwind.connfig.js` In your main directory
 
 Add the code bellow :
 
@@ -24,9 +24,9 @@ Add the code bellow :
 
 ### Genrate `API Key from ` [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)
 
-Add the api key in .env file Name it
+Add the api key in `.env` file Name it
 
-**REACT_APP_API_URL:`Your API KEY`**
+**`REACT_APP_API_URL:Your API KEY`**
 
 ### Run `npm install chat-bot-ai`
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { HiOutlineChevronDoubleDown } from "react-icons/hi";
+import { HiOutlineChevronDoubleDown } from "react-icons/hi/index.esm.js";
 
 const ChatArea = ({ chat, apiError, loading }) => {
   const chatBoxRef = useRef(null);

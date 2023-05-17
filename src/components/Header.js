@@ -1,6 +1,6 @@
 import React from "react";
-import { BsRobot } from "react-icons/bs";
-import { MdKeyboardArrowDown } from "react-icons/md";
+import { BsRobot } from "react-icons/bs/index.esm.js";
+import { MdKeyboardArrowDown } from "react-icons/md/index.esm.js";
 
 const Header = ({ setIsOpen }) => {
   return (

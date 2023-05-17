@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BsFillSendFill } from "react-icons/bs";
+import { BsFillSendFill } from "react-icons/bs/index.esm.js";
 
 const Footer = ({ setInputValue }) => {
   const [inputValue, setInput] = useState("");

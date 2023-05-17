@@ -1,26 +1,59 @@
 {
   "name": "chat-bot-ai",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.3",
+  "keywords": [
+    "react",
+    "components",
+    "ui",
+    "chat-bot"
+  ],
+  "private": false,
+  "main": "dist/index.js",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "css"
+  ],
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nitin6527/chat_bot_ai"
+  },
+  "scripts": {
+    "publish:npm": "rm -rf dist && mkdir dist &&  babel src -d dist --copy-files",
+    "publish": "npm publish --access=public",
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.3",
+    "@babel/plugin-syntax-import-assertions": "^7.20.0",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "autoprefixer": "10.4.14",
+    "autoprefixer": "^10.4.14",
+    "babel-loader": "^7.1.5",
+    "css-loader": "^6.7.3",
     "openai": "^3.2.1",
+    "postcss": "^8.4.23",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-scripts": "5.0.1",
+    "style-loader": "^3.3.2",
     "tailwindcss": "^3.3.2",
     "uuidv4": "^6.2.13",
     "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +72,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-plugin-transform-import-css": "^1.0.0-alpha.11",
+    "webpack": "^5.82.1",
+    "webpack-cli": "^5.1.1"
   }
 }

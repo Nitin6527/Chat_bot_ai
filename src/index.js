@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./index.css";
-import "tailwindcss/tailwind.css";
 import { BsRobot } from "react-icons/bs/index.esm.js";
 import ChatArea from "./components/ChatArea.js";
 import Footer from "./components/Footer.js";
